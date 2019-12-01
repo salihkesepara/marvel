@@ -1,0 +1,105 @@
+#tree {
+  position: absolute;
+}
+
+.tree-shake {    
+  animation: shake .1s ease-in-out 0s 30 alternate;
+}
+
+@keyframes shake {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+  transform-origin: 50% 100%;
+  -webkit-transform: rotate(-1deg);
+  }
+}
+
+.apple1 {top: 30px;left: 200px}
+.apple2 {top: 130px;left: 370px;}
+.apple3 {top: 220px;left: 150px}
+.apple4 {top: 131px;left: 250px}
+.apple5 {top: 300px;left: 200px}
+.apple6 {top: 250px;left: 350px}
+.apple7 {top: 270px;left: 290px}
+.apple8 {top: 50px;left: 300px}
+.apple9 {top: 180px;left: 310px}
+.apple10 {top: 80px;left: 160px}
+.apple11 {top: 150px;left: 110px}
+.apple12 {top: 186px;left: 211px}
+
+.drop-apple2, 
+.drop-apple3,
+.drop-apple7,
+.drop-apple8,
+.drop-apple9,
+.drop-apple12{ 
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.drop-apple2 {animation-name: drop2;animation-delay: 3s}
+.drop-apple3 {animation-name: drop3;animation-delay: 3.2s}
+.drop-apple7 {animation-name: drop7;animation-delay: 3.8s}
+.drop-apple8 {animation-name: drop8;animation-delay: 4.2s}
+.drop-apple9 {animation-name: drop9;animation-delay: 3.9s}
+.drop-apple12 {animation-name: drop12;animation-delay: 3.5s}
+
+@keyframes drop2 {
+  from {
+    top: 130px;
+  }
+  to {
+    top: 400px;
+  }
+}
+
+@keyframes drop3 {
+  from {
+    top: 220px;
+  }
+  to {
+    top: 475px;
+  }
+}
+
+@keyframes drop7 {
+  from {
+    top: 270px;
+  }
+  to {
+    top: 400px;
+  }
+}
+
+@keyframes drop8 {
+  from {
+    top: 50px;
+  }
+  to {
+    top: 390px;
+  }
+}
+
+@keyframes drop9 {
+  from {
+    top: 180px;
+  }
+  to {
+    top: 400px;
+  }
+}
+
+@keyframes drop12 {
+  from {
+    top: 186px;
+  }
+  to {
+    top: 475px;
+  }
+}
