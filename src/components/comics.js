@@ -4,11 +4,11 @@ import { ListGroup, Spinner } from "react-bootstrap";
 import { status } from "../constants";
 
 class Comics extends Component {
-  handleComics(comics) {
+  handleComics() {
     const comicList = (
       <div>
         {
-          comics.data.map(item => {
+          this.props.comics.data.map(item => {
             return (
               <ListGroup.Item as="li" key={item.id}>
                 {item.title}
@@ -20,7 +20,7 @@ class Comics extends Component {
     )
 
     const comicFailure = (
-      <p>{comics.message}</p>
+      <p>{this.props.comics.message}</p>
     )
 
     const spinner = (
@@ -29,9 +29,9 @@ class Comics extends Component {
       </div>
     )
 
-    switch (comics.status) {
+    switch (this.props.comics.status) {
       case status.SUCCESS:
-        return comics.data.length !== 0 ? comicList : null;
+        return this.props.comics.data.length !== 0 ? comicList : null;
       case status.FAILURE:
         return comicFailure;
       case status.PENDING:
@@ -43,7 +43,7 @@ class Comics extends Component {
   }
 
   render() {
-    return this.handleComics(this.props.comics);
+    return this.handleComics();
   }
 }
 

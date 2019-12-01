@@ -8,7 +8,6 @@ import InfiniteScroll from "react-infinite-scroll-component";
 class CharacterList extends Component {
   listGroup() {
     return this.props.characters.data.map(character => {
-      const image = `${character.thumbnail.path}.${character.thumbnail.extension}`;
       return (
         <ListGroup.Item
           as="li"
@@ -17,9 +16,8 @@ class CharacterList extends Component {
           onClick={() => this.props.onItemClick(character)}
         >
           <Item
-            image={image}
+            image={character.image}
             title={character.name}
-            onItemClick={this.props.onItemClick}
           />
         </ListGroup.Item>
       );

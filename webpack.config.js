@@ -90,6 +90,10 @@ var config = {
         use: ["html-loader"]
       },
       {
+        test: /\.json$/,
+        use: ["json-loader"]
+      },
+      {
         test: /\.(svg|png|jpg|gif)$/,
         use: {
           loader: "file-loader",

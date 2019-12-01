@@ -1,0 +1,28 @@
+{
+  "success": {
+    "status": "SUCCESS",
+    "data": [
+      {
+        "id": 1011334,
+        "image": "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg",
+        "name": "3-D Man"
+      }
+    ],
+    "message": ""
+  },
+  "failure": {
+    "status": "FAILURE",
+    "data": [],
+    "message": "Failed to fetch"
+  },
+  "pending": {
+    "status": "PENDING",
+    "data": [],
+    "message": ""
+  },
+  "empty": {
+    "status": null,
+    "data": [],
+    "message": ""
+  }
+}

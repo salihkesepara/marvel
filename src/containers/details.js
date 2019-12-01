@@ -7,7 +7,6 @@ import Comics from "../components/comics";
 class Details extends Component {
   render() {
     const character = this.props.details.data;
-    const image = `${character.thumbnail.path}.${character.thumbnail.extension}`;
     const comics = this.props.comics;
 
     return (
@@ -16,7 +15,7 @@ class Details extends Component {
           <Modal.Title>{character.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Image src={image} alt={character.name} width="100%" rounded />
+          <Image src={character.image} alt={character.name} width="100%" rounded />
           <p>{character.description}</p>
 
           <div className="comics">Comics</div>

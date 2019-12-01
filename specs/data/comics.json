@@ -1,0 +1,27 @@
+{
+  "success": {
+    "status": "SUCCESS",
+    "data": [
+      {
+        "id": 22506,
+        "title": "Avengers: The Initiative (2007) #19"
+      }
+    ],
+    "message": ""
+  },
+  "failure": {
+    "status": "FAILURE",
+    "data": [],
+    "message": "Failed to fetch"
+  },
+  "panding": {
+    "status": "PENDING",
+    "data": [],
+    "message": ""
+  },
+  "empty": {
+    "status": null,
+    "data": [],
+    "message": ""
+  }
+}
