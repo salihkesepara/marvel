@@ -28,3 +28,9 @@ anasayfaya gitmeli</li>
 <p>Artı puan katacak şeyler;</p>
 </br >
 <li>Unit test, snapshot test</li>
+
+<p>Home Page</p>
+<img src="screenshot_home.png" />
+
+<p>Details Page</p>
+<img src="screenshot_details.png" />
