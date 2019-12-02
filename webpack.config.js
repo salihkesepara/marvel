@@ -42,7 +42,7 @@ var config = {
       filename: "index.html",
       template: "./index.html"
     }),
-    new CopyPlugin([{ from: "./src/assets/images", to: "./assets/images" }])
+    // new CopyPlugin([{ from: "./src/assets/images", to: "./assets/images" }])
   ],
   module: {
     rules: [
@@ -93,16 +93,16 @@ var config = {
         test: /\.json$/,
         use: ["json-loader"]
       },
-      {
-        test: /\.(svg|png|jpg|gif)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[hash].[ext]",
-            outputPath: "assets/images"
-          }
-        }
-      }
+      // {
+      //   test: /\.(svg|png|jpg|gif)$/,
+      //   use: {
+      //     loader: "file-loader",
+      //     options: {
+      //       name: "[name].[hash].[ext]",
+      //       outputPath: "assets/images"
+      //     }
+      //   }
+      // }
     ]
   }
 };
